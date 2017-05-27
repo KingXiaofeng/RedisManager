@@ -1,20 +1,19 @@
 package com.mauersu.dao;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.stereotype.Service;
-
 import com.mauersu.exception.RedisConnectionException;
 import com.mauersu.util.RedisApplication;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Service;
 
 /**
  * redis模板工厂
  */
 @Service
 public class RedisTemplateFactory extends RedisApplication {
-	
-	private static Log log = LogFactory.getLog(RedisTemplateFactory.class);
+
+	private static Logger log = LoggerFactory.getLogger(RedisTemplateFactory.class);
 
 	/**
 	 * 获取redis模板

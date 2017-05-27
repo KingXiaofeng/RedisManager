@@ -1,7 +1,7 @@
 package cn.workcenter.common;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -10,8 +10,8 @@ import java.lang.reflect.Method;
  * 加载器
  */
 public class Loader {
-	
-	private static Log log = LogFactory.getLog(Loader.class);
+
+	private static Logger log = LoggerFactory.getLogger(Loader.class);
 	
 	public static Class getClass(String clazz) throws ClassNotFoundException, NoSuchMethodException, SecurityException {
 

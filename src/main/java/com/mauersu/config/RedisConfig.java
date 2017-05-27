@@ -1,8 +1,8 @@
 package com.mauersu.config;
 
 import com.mauersu.exception.RedisInitException;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -15,7 +15,7 @@ import java.util.Properties;
  */
 public class RedisConfig {
 
-	private static Log log = LogFactory.getLog(RedisConfig.class);
+	private static Logger log = LoggerFactory.getLogger(RedisConfig.class);
 	
 	private final static String DEFAULT_REDIS_PROPERTIES_FILEPATH = RedisConfig.class.getClassLoader().getResource("/").getPath() + "/redis.properties";
 	
