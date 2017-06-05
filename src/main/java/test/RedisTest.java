@@ -25,8 +25,8 @@ public class RedisTest {
         config.setMaxIdle(5);
         config.setTestOnBorrow(false);
 
-        jedisPool = new JedisPool(config,"192.168.137.130",7002);
-        //jedisPool = new JedisPool(config,"127.0.0.1",7000);
+        // jedisPool = new JedisPool(config,"192.168.137.130",7002);
+        jedisPool = new JedisPool(config,"127.0.0.1",6379);
     }
 
     public void show(){
